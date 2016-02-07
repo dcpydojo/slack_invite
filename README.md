@@ -1,6 +1,6 @@
 # Django Slack Invite App - Heroku Ready
 
-### Based Upon (Heroku Django 1.9 Template)[https://github.com/heroku/heroku-django-template]
+### Based Upon [Heroku Django 1.9 Template](https://github.com/heroku/heroku-django-template)
 
 ## Features
 
