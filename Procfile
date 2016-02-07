@@ -1,0 +1,1 @@
+web: gunicorn django_slack_inviter.wsgi --log-file -

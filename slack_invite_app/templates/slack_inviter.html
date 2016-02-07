@@ -1,0 +1,54 @@
+{% extends "slack_base.html" %}
+
+{% block content %}
+
+
+<div id="wrapper">
+  <div class="main">
+    <div class="header">
+      <h1><strong>Get Your {{ SLACK_TEAM_NAME }} Slack Invite</strong></h1>
+      <h2>Enter your email below to join {{ SLACK_TEAM_NAME }}  on Slack!</h2></div>
+    <div class="content">
+      <div class="information">
+
+                    {% if form.errors %}
+                <div class="alert alert-error">
+                  <ul>
+                    {% for field in form %}
+                      {% if field.errors %}
+                        {% for error in field.errors %}
+                          <h4>{{ error }}</h4>
+                        {% endfor %}
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                  {% if form.non_field_errors %}
+                    {{ form.non_field_errors }}
+                  {% endif %}
+                </div>
+            {% endif %}
+
+        <form action="{% url 'slack_invite_form' %}" method="POST" id="join-form" enctype="multipart/form-data" accept-charset="UTF-8"> 
+
+        {% csrf_token %} 
+
+
+        
+
+                                {{ form.email }}
+
+                 
+          <input type="submit" value="Join" class="submit">
+
+
+
+            </form>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

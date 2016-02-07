@@ -1,0 +1,27 @@
+{% extends "slack_base.html" %}
+
+{% block content %}
+
+
+
+
+<div id="wrapper">
+  <div class="main">
+    <div class="header">
+      <h1><strong>Your Invite to {{ SLACK_TEAM_NAME }}'s Slack Group is on the way! </strong></h1>
+
+    <div class="content">
+      <div class="information">
+
+
+        <h2> You should head over to <a href="{{ SLACK_URL }}">{{ SLACK_URL }}</a></h2>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
