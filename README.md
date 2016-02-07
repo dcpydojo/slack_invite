@@ -17,7 +17,9 @@ In slack_invite_app.settings, add your Slack information:
 
     SLACK_URL = '' ### your slack team url (ex: dcpythondojo.slack.com)
     SLACK_TEAM_NAME = '' ### your community or team name to display on join page.
-    SLACK_TOKEN = '' ### access token of slack. You can generate it in https://api.slack.com/web#auth. You should generate the token in admin user, not owner. If you generate the token in owner user, missing_scope error will be occurred.
+    SLACK_TOKEN = '' ### access token for slack. 
+
+You can generate your token at https://api.slack.com/web#auth. You should generate the token in admin user, not owner. If you generate the token in owner user, missing_scope error will be occurred.
 
 ## Deployment to Heroku
 
