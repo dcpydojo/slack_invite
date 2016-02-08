@@ -7,7 +7,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Join the {{ SLACK_TEAM_NAME }}community on Slack!!</title>
-<link rel="icon" href="{% static 'pythonicon.gif' %}">
+
+<!-- for FF, Chrome, Opera -->
+<link rel="icon" type="image/png" href="{% static 'pythonicon.gif' %}" sizes="16x16">
+<link rel="icon" type="image/png" href="{% static 'pythonicon.gif' %}" sizes="32x32">
+
+<!-- for IE -->
+<link rel="icon" type="image/x-icon" href="{% static 'pythonicon.gif' %}" >
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'pythonicon.gif' %}"/>
+
+
+
 <link href="{% static 'slack_invite.css' %}" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800" rel="stylesheet" type="text/css">
 
