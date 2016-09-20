@@ -40,6 +40,6 @@ You can generate your token at https://api.slack.com/web#auth. You should genera
 
     $ heroku config:set SLACK_TOKEN=[Put your slack token here]
 
-
+#### deployed at dcpythondojo.herokuapp.com/slack
 
 
